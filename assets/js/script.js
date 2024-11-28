@@ -91,13 +91,13 @@ function randomPosish() {
     // Randomly assign a new justification class
     switch (random3()) {
         case 0:
-            justify = "justify-content-start";
+            justify = "justify-content-start text-start";
             break;
         case 1:
-            justify = "justify-content-center";
+            justify = "justify-content-center text-center";
             break;
         case 2:
-            justify = "justify-content-end";
+            justify = "justify-content-end text-end";
             break;
     }
 
