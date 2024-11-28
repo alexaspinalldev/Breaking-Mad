@@ -51,9 +51,50 @@ let currentIndex = 0; // makes the index start with the first image in the array
 const newBgBtn = document.getElementById('newBgBtn'); // This gets the button
 
 // Function to update the background image
-function changeBackground() {
+function newBg() {
     currentIndex = (currentIndex + 1) % images.length; // Loop back to 0 after the last image so that we cycle through all images
     imageBox.style.backgroundImage = `url('${images[currentIndex]}')`; // Updates the image
     console.log(`Background changed to: ${images[currentIndex]} (Index: ${currentIndex})`); // Logs the change on the console so I can see what I'm doing
+    randomPosish() // Randomises the postion of the quote
 }
 newBgBtn.addEventListener('click', changeBackground); // waits for the click
+
+
+///Randomised layout of the quote
+let random3 = () => Math.floor(Math.random() * 3); // Get a random number 0-2
+
+function randomPosish() {
+    imageBox.classList.remove(lastAlign) // Remove the previously set classes
+    imageBox.classList.remove(lastJustify)
+
+    switch(random3()) {
+        case 0:
+            newAlign = "align-items-start"
+            lastAlign = "align-items-start"
+            break;
+        case 1:
+            newAlign = "align-items-center"
+            lastAlign = "align-items-center"
+            break;
+        case 2:
+            newAlign = "align-items-end"
+            lastAlign = "align-items-end"
+      }
+
+      switch(random3()) {
+        case 0:
+            newJustify = "justify-content-start"
+            lastJustify = "justify-content-start"
+            break;
+        case 1:
+            newJustify = "justify-content-center"
+            lastJustify = "justify-content-center"
+            break;
+        case 2:
+            newJustify = "justify-content-end"
+            lastJustify = "justify-content-end"
+      }
+
+    imageBox.classList.add(newAlign) // Add the new classes
+    imageBox.classList.add(newJustify)
+}
