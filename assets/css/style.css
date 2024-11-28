@@ -15,13 +15,16 @@ body {
 
 .somfootlink {
     color:white;
+    margin-left: 25px;
 }
 .alfootlink{
     color: red;
+    margin-left: 25px;
 }
 
 .benfootlink {
-    color:blue
+    color:blue;
+    margin-left: 25px;
 }
 
 .footlink:hover{
