@@ -72,7 +72,7 @@ function randomPosish() {
 
     imageBox.classList.remove(removeAlign);
     imageBox.classList.remove(removeJustify);
-    console.log("Removed", removeAlign, removeJustify);
+    console.log("Removed:", removeAlign, removeJustify);
 
 
     // Randomly assign a new alignment class
@@ -91,13 +91,13 @@ function randomPosish() {
     // Randomly assign a new justification class
     switch (random3()) {
         case 0:
-            justify = "justify-content-start text-start";
+            justify = "justify-content-start", "text-start";
             break;
         case 1:
-            justify = "justify-content-center text-center";
+            justify = "justify-content-center", "text-center";
             break;
         case 2:
-            justify = "justify-content-end text-end";
+            justify = "justify-content-end", "text-end";
             break;
     }
 
@@ -107,7 +107,7 @@ function randomPosish() {
     // Add the new classes to imageBox
     imageBox.classList.add(align);
     imageBox.classList.add(justify);
-    console.log("Added", align, justify);
+    console.log("Added:", align, justify);
 }
 
 
