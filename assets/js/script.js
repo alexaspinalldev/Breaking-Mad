@@ -62,7 +62,7 @@ newBgBtn.addEventListener('click', changeBackground); // waits for the click
 
 /// Randomised layout of the quote
 var removeAlign;
-var removeJustify;
+var removeJustify = [];
 
 function randomPosish() {
     let random3 = () => Math.floor(Math.random() * 3); // Get a random number 0-2
@@ -70,9 +70,17 @@ function randomPosish() {
     let align;
     let justify;
 
-    imageBox.classList.remove(removeAlign);
-    imageBox.classList.remove(removeJustify);
-    console.log("Removed:", removeAlign, removeJustify);
+    // Remove old classes if they exist
+    if (removeAlign) { // Remove the previous alignment class
+        imageBox.classList.remove(removeAlign);
+    }
+
+    console.log(removeJustify)
+    console.log(removeJustify.length)
+    if (removeJustify.length > 0) { // If there are justify classes to remove
+        imageBox.classList.remove(...removeJustify);
+    }
+    console.log("Removed:", removeAlign, ...removeJustify);
 
 
     // Randomly assign a new alignment class
@@ -91,13 +99,13 @@ function randomPosish() {
     // Randomly assign a new justification class
     switch (random3()) {
         case 0:
-            justify = "justify-content-start", "text-start";
+            justify = ["justify-content-start", "text-start"];
             break;
         case 1:
-            justify = "justify-content-center", "text-center";
+            justify = ["justify-content-center", "text-center"];
             break;
         case 2:
-            justify = "justify-content-end", "text-end";
+            justify = ["justify-content-end", "text-end"];
             break;
     }
 
@@ -106,8 +114,8 @@ function randomPosish() {
 
     // Add the new classes to imageBox
     imageBox.classList.add(align);
-    imageBox.classList.add(justify);
-    console.log("Added:", align, justify);
+    imageBox.classList.add(...justify);
+    console.log("Added:", align, ...justify);
 }
 
 
