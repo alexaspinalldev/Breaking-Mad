@@ -13,15 +13,14 @@ async function newQuote() {
     try {
         const response = await fetch("https://api.breakingbadquotes.xyz/v1/quotes");
         const data = await response.json(); // Convert to JSON array
-        let quote = data[0].quote;
-        let author = data[0].author;
-       
+        quote = data[0].quote;
+        author = data[0].author;
     } catch (error) {
         console.log("Error:", error); // Handle errors
     }
     quoteBox.innerText = quote;
-    authorBox.innerText = ` - ${author}`;
-    newBg();
+    authorBox.innerText = author;
+    newBg()
 }
 
 
