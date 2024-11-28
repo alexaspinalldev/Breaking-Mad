@@ -60,41 +60,54 @@ function newBg() {
 newBgBtn.addEventListener('click', changeBackground); // waits for the click
 
 
-///Randomised layout of the quote
-let random3 = () => Math.floor(Math.random() * 3); // Get a random number 0-2
+/// Randomised layout of the quote
+var removeAlign;
+var removeJustify;
 
 function randomPosish() {
-    imageBox.classList.remove(lastAlign) // Remove the previously set classes
-    imageBox.classList.remove(lastJustify)
+    let random3 = () => Math.floor(Math.random() * 3); // Get a random number 0-2
 
-    switch(random3()) {
+    let align;
+    let justify;
+
+    imageBox.classList.remove(removeAlign);
+    imageBox.classList.remove(removeJustify);
+    console.log("Removed", removeAlign, removeJustify);
+
+
+    // Randomly assign a new alignment class
+    switch (random3()) {
         case 0:
-            newAlign = "align-items-start"
-            lastAlign = "align-items-start"
+            align = "align-items-start";
             break;
         case 1:
-            newAlign = "align-items-center"
-            lastAlign = "align-items-center"
+            align = "align-items-center";
             break;
         case 2:
-            newAlign = "align-items-end"
-            lastAlign = "align-items-end"
-      }
+            align = "align-items-end";
+            break;
+    }
 
-      switch(random3()) {
+    // Randomly assign a new justification class
+    switch (random3()) {
         case 0:
-            newJustify = "justify-content-start"
-            lastJustify = "justify-content-start"
+            justify = "justify-content-start";
             break;
         case 1:
-            newJustify = "justify-content-center"
-            lastJustify = "justify-content-center"
+            justify = "justify-content-center";
             break;
         case 2:
-            newJustify = "justify-content-end"
-            lastJustify = "justify-content-end"
-      }
+            justify = "justify-content-end";
+            break;
+    }
 
-    imageBox.classList.add(newAlign) // Add the new classes
-    imageBox.classList.add(newJustify)
+    removeAlign = align;
+    removeJustify = justify;
+
+    // Add the new classes to imageBox
+    imageBox.classList.add(align);
+    imageBox.classList.add(justify);
+    console.log("Added", align, justify);
 }
+
+
