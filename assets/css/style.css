@@ -6,3 +6,24 @@ body {
     color: #367e79;
     text-align: center;
 }
+
+.foot {
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+.somfootlink {
+    color:white;
+}
+.alfootlink{
+    color: red;
+}
+
+.benfootlink {
+    color:blue
+}
+
+.footlink:hover{
+    color:#367e79;
+}
