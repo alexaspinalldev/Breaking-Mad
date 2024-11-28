@@ -1,26 +1,35 @@
-/// Global variables
-const imageBox = document.getElementById("imageBox");
-const quoteBox = document.getElementById("quoteBox");
-const authorBox = document.getElementById("authorBox");
 
-const newQuoteBtn = document.getElementById("newQuoteBtn");
-const newBgBtn = document.getElementById("newBgBtn");
 
-/// Evt listeners for the buttons go here
 
-/// ------- Functions ------- ///
-// Generate new quote and background
-function newQuote(); {
-fetch { blah blah blah data.json
+
+
+
+
+
+
+
+
+
+
+
+const images = [
+    'assets/images/bg images/Forest.webp',
+    'assets/images/bg images/Sunset.jpg',
+    'assets/images/bg images/Swingset.jpg',
+    'assets/images/bg images/Underwater Scene.webp',
+    'assets/images/bg images/Waterfall.webp',
+
+];
+
+let currentIndex = 0;
+const imageBox = document.getElementById('imageBox'); 
+const newBgBtn = document.getElementById('newBgBtn'); 
+
+// Function to update the background image
+function changeBackground() {
+    currentIndex = (currentIndex + 1) % images.length;
+    imageBox.style.backgroundImage = `url('${images[currentIndex]}')`;
+    console.log(`Background changed to: ${images[currentIndex]} (Index: ${currentIndex})`);
 }
-let quoteBox.innerText = data.quote
-let authorBox.innerText = data.author
-newBg()
-}
 
-// Cycle Background
-function newBg(); {
-// get a random number 0-8 > Switch cases to apply background to div
-
-- Math.floor(Math.random() * 8 + 1)
-}
+newBgBtn.addEventListener('click', changeBackground);
