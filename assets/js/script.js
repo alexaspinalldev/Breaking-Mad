@@ -36,6 +36,7 @@ async function newQuote() {
 
 
 
+
 // my array of images
 const images = [
     'assets/images/bg images/Forest.webp',
