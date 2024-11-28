@@ -15,19 +15,13 @@ async function newQuote() {
         const data = await response.json(); // Convert to JSON array
         let quote = data[0].quote;
         let author = data[0].author;
-        console.log(quote);
-        console.log(author);
        
     } catch (error) {
         console.log("Error:", error); // Handle errors
     }
     quoteBox.innerText = quote;
-    authorBox.innerText = author;
-
-    console.log(quoteBox.innerText)
-    console.log(authorBox.innerText)
-
-    newBg()
+    authorBox.innerText = ` - ${author}`;
+    newBg();
 }
 
 
