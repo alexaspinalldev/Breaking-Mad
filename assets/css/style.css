@@ -6,6 +6,15 @@ body {
     text-align: center;
 }
 
+#imageBox {
+    height: 400px; 
+    width: 400px; 
+    background-image: url('assets/images/bg images/Forest.webp'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
 .foot {
     background-color: black;
     color: white;
