@@ -19,7 +19,7 @@ async function newQuote() {
         console.log("Error:", error); // Handle errors
     }
     quoteBox.innerText = quote;
-    authorBox.innerText = author;
+    authorBox.innerText = ` - ${author}`;
     newBg()
 }
 
