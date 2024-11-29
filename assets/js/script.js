@@ -25,18 +25,6 @@ async function newQuote() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 // my array of images
 const images = [
     'assets/images/bg images/Forest.webp',
@@ -57,30 +45,24 @@ function newBg() {
     console.log(`Background changed to: ${images[currentIndex]} (Index: ${currentIndex})`); // Logs the change on the console so I can see what I'm doing
     randomPosish() // Randomises the postion of the quote
 }
-newBgBtn.addEventListener('click', changeBackground); // waits for the click
+// newBgBtn.addEventListener('click', changeBackground); // No need for this as were using onclick - Alex
+
 
 
 /// Randomised layout of the quote
-var removeAlign;
-var removeJustify = [];
+var removePosition = [];
 
 function randomPosish() {
     let random3 = () => Math.floor(Math.random() * 3); // Get a random number 0-2
 
-    let align;
-    let justify;
+    let positionList = [];
 
-    // Remove old classes if they exist
-    if (removeAlign) { // Remove the previous alignment class
-        imageBox.classList.remove(removeAlign);
-    }
-
-    console.log(removeJustify)
-    console.log(removeJustify.length)
-    if (removeJustify.length > 0) { // If there are justify classes to remove
-        imageBox.classList.remove(...removeJustify);
-    }
-    console.log("Removed:", removeAlign, ...removeJustify);
+    if (removePosition.length > 0) { // If there are positioning classes to remove
+        for (let position of removePosition) { // loop through the array
+        imageBox.classList.remove(position); // and remove each class
+        console.log("Removed class:", position);}
+    } else {console.log("false")}
+    console.log("Removed array:", removePosition);
 
 
     // Randomly assign a new alignment class
@@ -109,13 +91,16 @@ function randomPosish() {
             break;
     }
 
-    removeAlign = align;
-    removeJustify = justify;
+    //Assemble the positionList array here
+    positionList.push(align, ...justify)
+
+    removePosition = positionList; // Update the array to remove when the function re-runs
 
     // Add the new classes to imageBox
-    imageBox.classList.add(align);
-    imageBox.classList.add(...justify);
-    console.log("Added:", align, ...justify);
+    for (let position of positionList) { // Loop through the array
+        imageBox.classList.add(position); // and add each class
+        console.log("Added class:", position);}
+    console.log("Added array:", positionList);
 }
 
 
