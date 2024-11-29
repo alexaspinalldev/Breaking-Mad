@@ -64,7 +64,9 @@ body {
     color: #000; /* Text color for legibility */
     font-size: 1rem;
     backdrop-filter: blur(2px);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px;
+    border-radius: 15px;
 }
 #authorBox {
     color: #000; /* Text color for legibility */
