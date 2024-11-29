@@ -6,20 +6,47 @@ body {
     text-align: center;
 }
 
-#imageBox {
-    height: 400px; 
-    width: 400px; 
+.navb {
+    background-color: black;
+    color: white;
+}
 
-    background-image: url('assets/images/bg images/Forest.webp'); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 700px;
-    height: 700px;
+#imageBox {
+    
+    width: 85%;
+    height: 65vh;
+    max-height: 450px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    border-radius: 2%; 
+}
+#quoteBox {
+    color: #000; /* Text color for legibility */
+    font-size: 1rem;
+    backdrop-filter: blur(2px);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+#authorBox {
+    color: #000; /* Text color for legibility */
+    font-size: 1rem;
+    backdrop-filter: blur(2px);
+    max-width: 70%;
+    
+}
+
+.box {
+    background-color: #7e36747c;
+    box-sizing: border-box;
+    width: 85%;
+    height: 65vh;
+    max-height: 220px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    border-radius: 10%;
 }
 
 .foot {
@@ -30,14 +57,17 @@ body {
 
 .somfootlink {
     color:white;
-  margin-left: 25px;
+    margin-left: 25px;
 }
 .alfootlink{
     color: red;
     margin-left: 25px;
+    margin-left: 25px;
 }
 
 .benfootlink {
+    color:blue;
+    margin-left: 25px;
     color:blue;
     margin-left: 25px;
 }
