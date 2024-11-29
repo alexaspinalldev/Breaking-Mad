@@ -28,10 +28,11 @@ async function newQuote() {
 // my array of images
 const images = [
     'assets/images/bg images/Forest.webp',
-    'assets/images/bg images/Sunset.jpg',
-    'assets/images/bg images/Swingset.jpg',
+    'assets/images/bg images/Landscape Sunset.webp',
+    'assets/images/bg images/Swingset landscape.jpg',
     'assets/images/bg images/Underwater Scene.webp',
     'assets/images/bg images/Waterfall.webp',
+    'assets/images/bg images/Mountain Range.jpg'
 
 ];
 
