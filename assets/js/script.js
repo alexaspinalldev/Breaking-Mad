@@ -41,7 +41,6 @@ const newBgBtn = document.getElementById('newBgBtn'); // This gets the button
 
 // Function to update the background image
 function newBg() {
-function newBg() {
     currentIndex = (currentIndex + 1) % images.length; // Loop back to 0 after the last image so that we cycle through all images
     imageBox.style.backgroundImage = `url('${images[currentIndex]}')`; // Updates the image
     console.log(`Background changed to: ${images[currentIndex]} (Index: ${currentIndex})`); // Logs the change on the console so I can see what I'm doing
