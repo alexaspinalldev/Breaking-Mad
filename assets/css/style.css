@@ -6,6 +6,13 @@ body {
     text-align: center;
 }
 
+.navb {
+    background-color: black;
+    color: white;
+}
+
+
+
 .box {
     background-color: #7e36747c;
     box-sizing: border-box;
@@ -27,7 +34,7 @@ body {
 
 .somfootlink {
     color:white;
-  margin-left: 25px;
+    margin-left: 25px;
 }
 .alfootlink{
     color: red;
