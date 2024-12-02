@@ -11,7 +11,7 @@
 ![Image of Quote Page Responsive check](<assets/images/Am I responsive quote page image.PNG>)
 ## Introduction:
 A generator of inspirational images from the twisted mind of Vince Gilligan. We sort to end stress and other negative feelings through our innovative combination of calming inspirational backdrops, and the art of writing found in the Breaking Bad scripts.
-We are looking to tap in the entrepreneurship of fictional mob bosses and anti-hero's to inspire te next generation to succeed in all of their endeavours.
+We are looking to tap into the entrepreneurship of fictional mob bosses and anti-hero's to inspire the next generation to succeed in all of their endeavours.
 
 ## Key objectives:
 - Create an array of images that can be sorted through and displayed randomly to the user
