@@ -56,6 +56,7 @@ main {
     margin: auto auto auto auto;
     padding: 10px;
     border-radius: 20px;
+    display: flex;
 }
 #quoteBox {
     color: #000; /* Text color for legibility */
