@@ -1,9 +1,12 @@
 body {
     background-color: white;
     font-family: "Raleway", sans-serif;
-    padding: 2rem;
     color: #367e79;
     text-align: center;
+}
+
+main {
+    padding: 0 15px 0 15px;
 }
 
 .navb {
@@ -11,21 +14,21 @@ body {
     color: white;
 }
 
+.box > .btn {
+    margin: 5px 30px 5px 30px;
+}
+
 .box {
     background-color: #7e36747c;
     box-sizing: border-box;
-    width: 85%;
-    max-width: 830px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1%;
-    border-radius: 10%;
+    margin: 20px auto 20px auto;
+    padding: 15px;
+    border-radius: 20px;
 }
 
 .foot {
     background-color: black;
     color: white;
-    padding: 15px;
 }
 
 .somfootlink {
@@ -48,13 +51,11 @@ body {
 }
 
 #imageBox {
-    width: 85%;
-    height: 450px;
-    max-width: 830px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1%;
-    border-radius: 2%; 
+    max-height: 70vh;
+    aspect-ratio: 1 / 1;
+    margin: auto auto auto auto;
+    padding: 10px;
+    border-radius: 20px;
 }
 #quoteBox {
     color: #000; /* Text color for legibility */
@@ -69,5 +70,14 @@ body {
     font-size: 1rem;
     backdrop-filter: blur(2px);
     max-width: 70%;
+    
+}
+
+/* Media queries */
+
+@media screen and (min-width: 768px) {
+    #imageBox {
+        aspect-ratio: 4 / 2;
+    }
     
 }
