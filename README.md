@@ -49,11 +49,22 @@ A generator of inspirational images from the twisted mind of Vince Gilligan. We 
 
 ## WireFrame:
 
+### The wireframe of our home page
 ![Here is a wireframe of our homepage](/assets/images/homepagewireframe.png)
-![Here is a wireframe of our main motivational quotes page](/assets/images/generatequotepage.png)
-
 - We liked the interactivity of a front and center button taking us to our main quotation generator
+
+
+### The end result
+![image of our home Page](<assets/images/Home Page.PNG>)
+
+### The wireframe of our Quotes Page
+![Here is a wireframe of our main motivational quotes page](/assets/images/generatequotepage.png)
 - We wanted our quote generator to be clear and concise on the page, with nothing to distract from it's calming powers
+
+### The end result
+![Image of our Front Page](<assets/images/Front Page.PNG>)
+
+
 
 ## AI Image Generation
 
@@ -127,11 +138,15 @@ The API was accessed from this site: https://breakingbadquotes.xyz/
 
 
 - Testing:
-
+### HTML Test for home page
 ![Here is our testing pass certificated from HTML testing verification for our home page](/assets/images/Home%20Page%20Testing.png)
+### HTML Test for quote page
 ![Here is our testing pass certificated from HTML testing verification for our quote page](/assets/images/Quote%20Page%20Testing.png)
+### CSS Test
 ![Here is our testing pass certificated from HTML testing verification for our CSS](/assets/images/CSS%20testing.png)
-
+### JShint Test
+![Image of our JSHint test](<assets/images/JSHint testing.PNG>)
+- Please note that these 23 warnings are all browser related and the code is fully working without errors
 Credits:
 - Web Designer Somerset Dromgoole: https://github.com/Samersetred
 
