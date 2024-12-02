@@ -63,7 +63,7 @@ main {
     
     color:white; /* Text color for legibility */
     font-size: 1.2rem;
-    background-color: rgba(0, 0, 0, 0.25); /* Black with 25% opactiy /
+    background-color: rgba(0, 0, 0, 0.25); /* Black with 25% opactiy */
     backdrop-filter: blur(10px);
     font-family:serif;
     padding: 15px;
