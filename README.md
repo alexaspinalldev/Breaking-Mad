@@ -81,7 +81,7 @@ A generator of inspirational images from the twisted mind of Vince Gilligan. We 
 
 
 
-## Website Features
+## Website Features and Functions
 
 - This website includes two webpages;
 one home-page
@@ -91,15 +91,28 @@ one quote generator page
 - This website incldues an array of quotes and images, which can all be viewed at random
 - This website incldues the power to calm oneself during stressful moments
 
-## Technology Used
+## Features and Functions
 
-Languages used:
+### Javascript
 
-- HTML
-- CSS
+There are three main functions to the site's interactivity. The main quote-retrieving function includes the other functions as children.
+
+The first function accesses the chosen API, retrieving a random quote from Breaking Bad. The payload is parsed into JSON then formatted into an element on the page. This can be independently triggered for the user to choose their own background if they are satisfied with the quote.
+
+The second function cycles through an array of AI-generated background images.
+
+The third function uses a random generator and a pair of switch statements to assemble an array of classes to position the text over the image. The arrays are applied and removed with for...let loops. 
+
+### Technologies used
+- HTML5
+- CSS3
 - JavaScript
+- Bootstrap 5.3
+- DALLE via ChatGPT
 
-AI Used:
+The API was accessed from this site: https://breakingbadquotes.xyz/
+
+#### AI Used:
 
 DALLE-2: https://openai.com/index/dall-e-2/
 ChatGPT: https://chatgpt.com/
