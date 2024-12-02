@@ -137,7 +137,7 @@ The API was accessed from this site: https://breakingbadquotes.xyz/
 - AI Image Generator: https://deepai.org/machine-learning-model/text2img
 
 
-- Testing:
+### Testing:
 ### HTML Test for home page
 ![Here is our testing pass certificated from HTML testing verification for our home page](/assets/images/Home%20Page%20Testing.png)
 ### HTML Test for quote page
