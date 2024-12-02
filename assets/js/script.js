@@ -1,10 +1,11 @@
 // On page load run function
-document.addEventListener("DOMContentLoaded", () => newQuote())
+document.addEventListener("DOMContentLoaded", () => newQuote());
 
 /// Global variables
 const imageBox = document.getElementById("imageBox");
 const quoteBox = document.getElementById("quoteBox");
-const authorBox = document.getElementById("authorBox");
+let quote;
+let author;
 
 /// ------- Functions ------- ///
 // Generate new quote and background
@@ -19,8 +20,8 @@ async function newQuote() {
         console.log("Error:", error); // Handle errors
     }
     quoteBox.innerHTML = `${quote}<br>- ${author}`;
-    newBg()
-    randomPosish() // Randomises the postion of the quote
+    newBg();
+    randomPosish(); // Randomises the postion of the quote
 }
 
 
@@ -37,7 +38,6 @@ const images = [
 ];
 
 let currentIndex = 0; // makes the index start with the first image in the array (on line 0)
-const newBgBtn = document.getElementById('newBgBtn'); // This gets the button
 
 // Function to update the background image
 function newBg() {
@@ -45,12 +45,13 @@ function newBg() {
     imageBox.style.backgroundImage = `url('${images[currentIndex]}')`; // Updates the image
     console.log(`Background changed to: ${images[currentIndex]} (Index: ${currentIndex})`); // Logs the change on the console so I can see what I'm doing
 }
-// newBgBtn.addEventListener('click', changeBackground); // No need for this as were using onclick - Alex
 
 
 
 /// Randomised layout of the quote
 var removePosition = [];
+let justify;
+let align;
 
 function randomPosish() {
     let random3 = () => Math.floor(Math.random() * 3); // Get a random number 0-2
@@ -61,7 +62,8 @@ function randomPosish() {
         for (let position of removePosition) { // loop through the array
         imageBox.classList.remove(position); // and remove each class
         console.log("Removed class:", position);}
-    } else {console.log("false")}
+    } else {console.log("false");
+           }
     console.log("Removed array:", removePosition);
 
 
@@ -92,7 +94,7 @@ function randomPosish() {
     }
 
     //Assemble the positionList array here
-    positionList.push(align, ...justify)
+    positionList.push(align, ...justify);
 
     removePosition = positionList; // Update the array to remove when the function re-runs
 
@@ -102,5 +104,3 @@ function randomPosish() {
         console.log("Added class:", position);}
     console.log("Added array:", positionList);
 }
-
-
