@@ -3,7 +3,7 @@
 Deployment:
 
 Am I Responsive Image:
-![alt](/assets/images/Am%20I%20Responsive.png)
+![alt](/assets/images/Updated%20Am%20I%20responsive%20image.png)
 
 Introduction to readme:
 A generator of inspirational images from the twisted mind of Vince Gilligan
