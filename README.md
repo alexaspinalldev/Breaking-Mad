@@ -68,17 +68,16 @@ A generator of inspirational images from the twisted mind of Vince Gilligan. We 
 - "A serene redwood forest scene with towering, ancient redwood trees reaching towards the sky. The forest floor is lush with green ferns and soft moss"
   
 ![AI image of a sunset](<assets/images/bg images/Landscape Sunset.webp>)
--
+-  
+![AI image of a beautiful waterfall](<assets/images/bg images/Waterfall.webp>)
+- "A breathtaking scene of a lush waterfall cascading down a cliff surrounded by a dense tropical rainforest. The waterfall is framed by vibrant green forest"
+
 ![AI image of a mountain range](<assets/images/bg images/Mountain Range.jpg>)
 -
 ![AI image of a nice swingset](<assets/images/bg images/Swingset landscape.jpg>)
 -
 ![AI image of fish underwater](<assets/images/bg images/Underwater Scene.webp>)
 - "A vivid underwater scene showcasing a vibrant coral reef teeming with life. The reef features a variety of colorful corals in shades of orange, pink"
-  
-![AI image of a beautiful waterfall](<assets/images/bg images/Waterfall.webp>)
-- "A breathtaking scene of a lush waterfall cascading down a cliff surrounded by a dense tropical rainforest. The waterfall is framed by vibrant green forest"
-
 
 
 ## Website Features and Functions
@@ -114,10 +113,10 @@ The API was accessed from this site: https://breakingbadquotes.xyz/
 
 #### AI Used:
 
-DALLE-2: https://openai.com/index/dall-e-2/
-ChatGPT: https://chatgpt.com/
-Squoosh: https://squoosh.app/
-AI Image Generator: https://deepai.org/machine-learning-model/text2img
+- DALLE-2: https://openai.com/index/dall-e-2/
+- ChatGPT: https://chatgpt.com/
+- Squoosh: https://squoosh.app/
+- AI Image Generator: https://deepai.org/machine-learning-model/text2img
 
 
 - Testing:
