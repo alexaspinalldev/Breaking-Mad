@@ -96,12 +96,15 @@ one quote generator page
 
 There are three main functions to the site's interactivity. The main quote-retrieving function includes the other functions as children.
 
+### Quote API function
 ![Image of JS Quote array Function](<assets/images/Quote API Function.PNG>)
 - The first function accesses the chosen API, retrieving a random quote from Breaking Bad. The payload is parsed into JSON then formatted into an element on the page. This can be independently triggered for the user to choose their own background if they are satisfied with the quote.
 
+### Image Array Function
 ![Image of JS Image Array Function](<assets/images/Image Array function.PNG>)
 - The second function cycles through an array of AI-generated background images.
 
+### Quote Position Randomiser Function
 ![Image of JS quote randomiser position function 1](<assets/images/Quote position randomiser function 1.PNG>)
 ![Image of JS quote randomiser position function 2](<assets/images/Quote position randomiser function 2.PNG>)
 -The third function uses a random generator and a pair of switch statements to assemble an array of classes to position the text over the image. The arrays are applied and removed with for...let loops. 
@@ -135,3 +138,5 @@ Credits:
 - Web Designer Ben Williams: https://github.com/BenWilliams89
 
 - Web Designer Alex Aspinall: https://github.com/alexaspinalldev
+
+-
