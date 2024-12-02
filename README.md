@@ -52,35 +52,33 @@ A generator of inspirational images from the twisted mind of Vince Gilligan. We 
 ![Here is a wireframe of our homepage](/assets/images/homepagewireframe.png)
 ![Here is a wireframe of our main motivational quotes page](/assets/images/generatequotepage.png)
 
-We liked the interactivity of a front and center button taking us to our main quotation generator
-We wanted our quote generator to be clear and concise on the page, with nothing to distract from it's calming powers
+- We liked the interactivity of a front and center button taking us to our main quotation generator
+- We wanted our quote generator to be clear and concise on the page, with nothing to distract from it's calming powers
 
 ## AI Image Generation
 
-We used ChatGPT's image generator DALLE, and AI Image Generator to generate our calming images, which through the power of AI computation enables them to be more calming and inspirational.
-Image optimser Squoosh was used where the images weren't optimal
+- We used ChatGPT's image generator DALLE, and AI Image Generator to generate our calming images, which through the power of AI computation enables them to be more calming and inspirational.
+- Image optimser Squoosh was used where the images weren't optimal
+ 
+- Keywords like 'vivid' 'bright' 'warm' 'serene' were used for the prompts
+
+### Below are some of our images used with examples of prompts:
 
 ![AI image of a Forest](<assets/images/bg images/Forest.webp>)
+- "A serene redwood forest scene with towering, ancient redwood trees reaching towards the sky. The forest floor is lush with green ferns and soft moss"
+  
 ![AI image of a sunset](<assets/images/bg images/Landscape Sunset.webp>)
+-
 ![AI image of a mountain range](<assets/images/bg images/Mountain Range.jpg>)
+-
 ![AI image of a nice swingset](<assets/images/bg images/Swingset landscape.jpg>)
+-
 ![AI image of fish underwater](<assets/images/bg images/Underwater Scene.webp>)
+- "A vivid underwater scene showcasing a vibrant coral reef teeming with life. The reef features a variety of colorful corals in shades of orange, pink"
+  
 ![AI image of a beautiful waterfall](<assets/images/bg images/Waterfall.webp>)
+- "A breathtaking scene of a lush waterfall cascading down a cliff surrounded by a dense tropical rainforest. The waterfall is framed by vibrant green forest"
 
-Keywords like 'vivid' 'bright' 'warm' 'serene' were used for the prompts
-
-An example of some prompts used:
-
-"A serene redwood forest scene with towering, ancient redwood trees reaching towards the sky. The forest floor is lush with green ferns and soft moss" 
-![AI image of a Forest](<assets/images/bg images/Forest.webp>)
-
-
-"A vivid underwater scene showcasing a vibrant coral reef teeming with life. The reef features a variety of colorful corals in shades of orange, pink"
- ![AI image of fish underwater](<assets/images/bg images/Underwater Scene.webp>)
-
-
-"A breathtaking scene of a lush waterfall cascading down a cliff surrounded by a dense tropical rainforest. The waterfall is framed by vibrant green forest"
-![AI image of a beautiful waterfall](<assets/images/bg images/Waterfall.webp>)
 
 
 ## Website Features
@@ -116,8 +114,8 @@ AI Image Generator: https://deepai.org/machine-learning-model/text2img
 ![Here is our testing pass certificated from HTML testing verification for our CSS](/assets/images/CSS%20testing.png)
 
 Credits:
-Web Designer Somerset Dromgoole: https://github.com/Samersetred
+- Web Designer Somerset Dromgoole: https://github.com/Samersetred
 
-Web Designer Ben Williams: https://github.com/BenWilliams89
+- Web Designer Ben Williams: https://github.com/BenWilliams89
 
-Web Designer Alex Aspinall: https://github.com/alexaspinalldev
+- Web Designer Alex Aspinall: https://github.com/alexaspinalldev
